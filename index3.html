@@ -11,14 +11,14 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="container mx-auto my-8">
+<nav class="container relative mx-auto my-4">
     
     <!-- Desktop Menu -->
-    <div class="flex flex-col md:flex-row items-center justify-between my-6">
-        <div id="logo class="z-30">
-            <img src="./images/logo-bookmark.svg" alt="">
+    <div class="flex flex-col md:flex-row items-center justify-between space-x-20 my-6">
+        <div class="z-30">
+            <img src="./images/logo-bookmark.svg" alt="" id="logo">
         </div>
-        <div id="menu" class="items-center hidden uppercase md:flex space-x-12">
+        <div id="menu" class="items-center hidden uppercase md:flex space-x-8">
             <a href="#features" class="hover:text-red-500">Features</a>
             <a href="#pricing" class="hover:text-red-500">Pricing</a>
             <a href="#contact" class="hover:text-red-500">Contact</a>
@@ -28,10 +28,52 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div>
-
+    <div id="menu" class="fixed inset-0 flex-col items-center inset-0 hidden
+        w-full h-full m-h-screen 
+        text-white uppercase opacity-90 bg-cyan-950 hidden z-20
+    ">
+        <div class="w-full py-3 text-center hover:text-red-500">
+            <a href="#features" class="block">Features</a>
+        </div>
+        <div class="w-full py-3 text-center hover:text-red-500">
+            <a href="#pricing" class="block">Pricing</a>
+        </div>
+        <div class="w-full py-3 text-center hover:text-red-500">
+            <a href="#contact" class="block">Contact</a>
+        </div>
+        <div class="w-full py-3 text-center hover:text-red-500">
+            <a href="#" class="block">Login</a>
+        </div>
     </div>
 </nav>
+
+<!-- Hero Section -->
+<section id="hero">
+
+    <div class="container flex flex-col md:flex-row mx-auto my-32">
+
+        <!-- Hero Content -->
+        <div class="flex flex-col space-y-10 my-20">
+            <h2 class="text-3xl font-semibold text-center lg:text-6xl lg:text-left">
+                A Simple Bookmark Manager
+            </h2>
+            <p class="max-w-lg mx-auto text-lg text-center text-gray-400 
+                lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
+                    A clean and simple interface to organize your favourite websites. 
+                    Open a new browser tab and see your sites load instantly. Try it for free.
+            </p>
+            <div></div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+            <div id="bgHero"></div>
+            <img src="./images/illustration-hero.svg" alt="" 
+            class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible">
+        </div>
+    </div>
+    
+</section>
 
 </body>
 </html>
