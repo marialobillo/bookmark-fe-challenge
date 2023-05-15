@@ -5,10 +5,10 @@ const contentArray = Array.from(document.querySelectorAll('.content'))
 tabsArray.forEach(tab => {
     tab.addEventListener("click", () => {
         target = tab
-        tabsArray.forEach(t => {
-            t.classList.remove("font-semibold")
-            t.classList.remove("border-b-4")
-            t.classList.remove("border-red-500")
+        console.log(tabsArray[0])
+        tabsArray.forEach(tab => {
+            tab.classList.remove("border-b-4")
+            tab.classList.remove("border-red-500")
         })
 
         const currentTab = tabsArray.indexOf(target)
@@ -21,7 +21,6 @@ tabsArray.forEach(tab => {
             }
         })
 
-        target.classList.add("font-semibold")
         target.classList.add("border-b-4")
         target.classList.add("border-red-500")
     })
