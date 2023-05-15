@@ -26,3 +26,4 @@ tabsArray.forEach(tab => {
         target.classList.add("border-red-500")
     })
 })
+
