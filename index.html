@@ -12,26 +12,32 @@
 </head>
 <body class="overflow-x-hidden">
 
-<nav class="container relative mx-auto my-4">
+<nav class="container relative mx-auto p-4">
     
     <!-- Desktop Menu -->
-    <div class="flex flex-col md:flex-row items-center justify-between space-x-20 my-6">
-        <div class="z-30">
-            <img src="./images/logo-bookmark.svg" alt="" id="logo">
+    <div class="flex items-center justify-between space-x-20 my-6">
+        <div class="z-40">
+            <img src="./images/logo-bookmark.svg" alt="" id="logo-img">
         </div>
-        <div id="menu" class="items-center hidden uppercase md:flex space-x-8">
+
+        <div class="items-center hidden space-x-10 md:flex uppercase">
             <a href="#features" class="hover:text-red-500">Features</a>
             <a href="#pricing" class="hover:text-red-500">Pricing</a>
             <a href="#contact" class="hover:text-red-500">Contact</a>
             <a href="#login" class="px-10 py-3 bg-red-500 text-white rounded-lg border-2 border-red-500 shadow-md
                 hover:bg-white hover:text-red-500 hover:border-2 hover:border-red-500">Login</a>
         </div>
+
+        <button id="hamburger-btn" class="z-40 block md:hidden focus:outline-none hamburger">
+            <img src="./images/icon-hamburger.svg" alt="">
+        </button>
     </div>
 
     <!-- Mobile Menu -->
-    <div id="menu" class="fixed inset-0 flex-col items-center inset-0 hidden
+    <div id="mobile-menu" class="fixed inset-0 flex-col items-center inset-0 hidden
         w-full h-full m-h-screen 
-        text-white uppercase opacity-90 bg-cyan-950 hidden z-20
+        px-6 py-1 pt-24 pb-4 
+        text-white uppercase opacity-90 bg-cyan-950 hidden z-30 divided-y divide-gray-500
     ">
         <div class="w-full py-3 text-center hover:text-red-500">
             <a href="#features" class="block">Features</a>
@@ -43,7 +49,7 @@
             <a href="#contact" class="block">Contact</a>
         </div>
         <div class="w-full py-3 text-center hover:text-red-500">
-            <a href="#" class="block">Login</a>
+            <a href="#login" class="block">Login</a>
         </div>
     </div>
 </nav>
@@ -52,7 +58,7 @@
 <section id="hero">
     
     <div class="container flex flex-col md:flex-row justify-center items-center mx-auto md:my-32 mt-4 pl-12">
-        <div class="absolute min-h-[290px] w-4/5 bottom-90 right-0 md:w-3/6 bg-blue-600 rounded-l-full sm:invisible md:visible">
+        <div class="absolute min-h-[290px] w-4/5 bottom-90 right-0 md:w-3/6 bg-blue-600 rounded-l-full sm:hidden xs:hidden md:visible">
         </div>
         <!-- Hero Content -->
         <div class="flex flex-col space-y-6 my-20">
@@ -491,7 +497,7 @@
         </div>
 
         <div class="flex space-x-10">
-            <a href="#">
+            <a href="#facebook">
                 <img src="./images/icon-facebook.svg" alt="" class="h-8 
                 hover:invert-100
                 hover:sepia-100
@@ -501,7 +507,7 @@
                 hover:contrast-75
                 ">
             </a>
-            <a href="#">
+            <a href="#twitter">
                 <img src="./images/icon-twitter.svg" alt="" class="h-8 
                 hover:invert-100
                 hover:sepia-100
