@@ -1,50 +1,44 @@
-
-
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-
 .faq.active .answer {
-    max-height: 300px;
-    animation: fade 1s ease-in-out;
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
 }
 
 .faq.active svg {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
-
-
 svg {
-    transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
 }
 
 @keyframes fade {
-    from  {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
- // hamburger menu
- .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
-}  
+// hamburger menu
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
 
 .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
-    position: fixed;
-    top: 50px;
-    right: 25px;
-  }
-
+  transform: rotate(90deg);
+  transform: translateY(0px);
+  position: fixed;
+  top: 50px;
+  right: 25px;
+}
