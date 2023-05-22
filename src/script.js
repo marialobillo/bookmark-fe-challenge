@@ -3,6 +3,8 @@ const contentArray = Array.from(document.querySelectorAll(".content"));
 
 const faqs = document.querySelectorAll(".faq");
 const answers = document.querySelectorAll(".answer");
+const arrows = document.querySelectorAll(".arrow");
+console.log(arrows)
 
 const btn = document.getElementById("hamburger-btn");
 const menu = document.getElementById("mobile-menu");
@@ -38,10 +40,17 @@ faqs.forEach((faq, index) => {
     answers.forEach((answer) => {
       answer.classList.add("max-h-0");
     });
+    // close all arrows
+    arrows.forEach((arrow) => { 
+      arrow.classList.remove("rotate-180");
+      arrow.classList.add("rotate-0");
+      arrow.classList.remove("text-red-500");
+    });
     faq.classList.toggle("active");
-    console.log(answers[index])
     answers[index].classList.remove("max-h-0");
     answers[index].classList.add("max-h-300");
+    arrows[index].classList.toggle("rotate-180");
+    arrows[index].classList.toggle("text-red-500");
   });
 });
 
