@@ -2,6 +2,7 @@ const tabsArray = Array.from(document.querySelectorAll(".tab"));
 const contentArray = Array.from(document.querySelectorAll(".content"));
 
 const faqs = document.querySelectorAll(".faq");
+const answers = document.querySelectorAll(".answer");
 
 const btn = document.getElementById("hamburger-btn");
 const menu = document.getElementById("mobile-menu");
@@ -31,9 +32,16 @@ tabsArray.forEach((tab) => {
 });
 
 // Faq menu accordion
-faqs.forEach((faq) => {
+faqs.forEach((faq, index) => {
   faq.addEventListener("click", () => {
+    // close all answers
+    answers.forEach((answer) => {
+      answer.classList.add("max-h-0");
+    });
     faq.classList.toggle("active");
+    console.log(answers[index])
+    answers[index].classList.remove("max-h-0");
+    answers[index].classList.add("max-h-300");
   });
 });
 

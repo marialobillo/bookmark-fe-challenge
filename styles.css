@@ -1,16 +1,12 @@
 
 
-.faq.active .answer {
-  max-height: 300px;
-  animation: fade 1s ease-in-out;
-}
 
 .faq.active svg {
-  transform: rotate(180deg);
+  //transform: rotate(180deg);
 }
 
 svg {
-  transition: transform 0.5s ease-in;
+ // transition: transform 0.5s ease-in;
 }
 
 
