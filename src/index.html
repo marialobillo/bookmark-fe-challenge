@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../dist/output.css" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
   </head>
   <body class="overflow-x-hidden font-sans">
@@ -26,12 +26,12 @@
         </div>
 
         <div class="items-center hidden space-x-10 md:flex uppercase">
-          <a href="#features" class="hover:text-red-500">Features</a>
-          <a href="#pricing" class="hover:text-red-500">Pricing</a>
-          <a href="#contact" class="hover:text-red-500">Contact</a>
+          <a href="#features" class="hover:text-redish">Features</a>
+          <a href="#pricing" class="hover:text-redish">Pricing</a>
+          <a href="#contact" class="hover:text-redish">Contact</a>
           <a
             href="#login"
-            class="px-10 py-3 bg-red-500 text-white rounded-lg border-2 border-red-500 shadow-md hover:bg-white hover:text-red-500 hover:border-2 hover:border-red-500"
+            class="px-10 py-3 bg-redish text-white rounded-lg border-2 border-redish shadow-md hover:bg-white hover:text-redish hover:border-2 hover:border-redish"
             >Login</a
           >
         </div>
@@ -49,16 +49,16 @@
         id="mobile-menu"
         class="fixed inset-0 flex-col items-center w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 text-white uppercase opacity-90 bg-cyan-950 hidden z-30 divided-y divide-gray-500"
       >
-        <div class="w-full py-3 text-center hover:text-red-500">
+        <div class="w-full py-3 text-center hover:text-redish">
           <a href="#features" class="block">Features</a>
         </div>
-        <div class="w-full py-3 text-center hover:text-red-500">
+        <div class="w-full py-3 text-center hover:text-redish">
           <a href="#pricing" class="block">Pricing</a>
         </div>
-        <div class="w-full py-3 text-center hover:text-red-500">
+        <div class="w-full py-3 text-center hover:text-redish">
           <a href="#contact" class="block">Contact</a>
         </div>
-        <div class="w-full py-3 text-center hover:text-red-500">
+        <div class="w-full py-3 text-center hover:text-redish">
           <a href="#login" class="block">Login</a>
         </div>
       </div>
@@ -138,11 +138,11 @@
           class="flex flex-col justify-around max-w-3xl mx-auto border-b space-x-10 md:flex-row cursor-pointer"
         >
           <div
-            class="text-center text-gray-600 border-b md:border-b-0 md:w-1/3 hover:text-red-500"
+            class="text-center text-gray-600 border-b md:border-b-0 md:w-1/3 hover:text-redish"
             data-target="panel-1"
           >
             <div
-              class="py-5 px-10 border-b-4 border-red-500 tab"
+              class="py-5 px-10 border-b-4 border-redish tab"
               data-target="panel-1"
             >
               Simple Bookmarking
@@ -150,7 +150,7 @@
           </div>
 
           <div
-            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 md:w-1/3 hover:text-red-500"
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 md:w-1/3 hover:text-redish"
             data-target="panel-2"
           >
             <div class="py-5 px-10 tab" data-target="panel-2">
@@ -159,7 +159,7 @@
           </div>
 
           <div
-            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 md:w-1/3 hover:text-red-500"
+            class="flex justify-center text-center text-gray-600 border-b md:border-b-0 md:w-1/3 hover:text-redish"
             data-target="panel-2"
           >
             <div class="py-5 px-10 tab" data-target="panel-2">Easy Sharing</div>
@@ -402,7 +402,7 @@
         <div
           class="question-class flex flex-row md:flex-row items-center justify-between question"
         >
-          <h3 class="text-xl hover:text-red-500">What is Bookmark?</h3>
+          <h3 class="text-xl hover:text-redish">What is Bookmark?</h3>
           <svg xmlnx="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
             <path
               fill="none"
@@ -435,7 +435,7 @@
         <div
           class="question-class flex flex-row md:flex-row items-center justify-between question"
         >
-          <h3 class="text-xl hover:text-red-500">
+          <h3 class="text-xl hover:text-redish">
             How can I request a new browser?
           </h3>
           <svg xmlnx="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
@@ -470,7 +470,7 @@
         <div
           class="question-class flex flex-row md:flex-row items-center justify-between question"
         >
-          <h3 class="text-xl hover:text-red-500">Is there a mobile app?</h3>
+          <h3 class="text-xl hover:text-redish">Is there a mobile app?</h3>
           <svg xmlnx="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
             <path
               fill="none"
@@ -503,7 +503,7 @@
         <div
           class="question-class flex flex-row md:flex-row items-center justify-between question"
         >
-          <h3 class="text-xl hover:text-red-500">
+          <h3 class="text-xl hover:text-redish">
             What about other Chromium browsers?
           </h3>
           <svg xmlnx="http://www.w3.org/2000/svg" width="18" height="12" class="arrow">
@@ -562,17 +562,17 @@
             id="email"
             required
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            class="flex w-4xl md:w-5xl px-2 pt-3 pb-2 rounded border-2 border-white md:mb-0 peer invalid:border-2 invalid:border-red-500"
+            class="flex w-4xl md:w-5xl px-2 pt-3 pb-2 rounded border-2 border-white md:mb-0 peer invalid:border-2 invalid:border-redish"
             placeholder="Enter your email address"
           />
           <p
-            class="flex-col md:w-5xl hidden text-xs text-white py-1 px-2 rounded-b bg-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
+            class="flex-col md:w-5xl hidden text-xs text-white py-1 px-2 rounded-b bg-redish peer-[&:not(:placeholder-shown):not(:focus):invalid]:block"
           >
             Whoops, make sure it's an email
           </p>
         </div>
         <button
-          class="bg-red-500 text-white border-2 border-red-500 rounded py-3 px-6 hover:bg-white hover:text-red-500"
+          class="bg-redish text-white border-2 border-redish rounded py-3 px-6 hover:bg-white hover:text-redish"
         >
           Contact Us
         </button>
@@ -592,9 +592,9 @@
             alt="logo bookmark"
             class="mb-1"
           />
-          <a href="#features" class="uppercase hover:text-red-500">Features</a>
-          <a href="#pricing" class="uppercase hover:text-red-500">Pricing</a>
-          <a href="#contact" class="uppercase hover:text-red-500">Contact</a>
+          <a href="#features" class="uppercase hover:text-redish">Features</a>
+          <a href="#pricing" class="uppercase hover:text-redish">Pricing</a>
+          <a href="#contact" class="uppercase hover:text-redish">Contact</a>
         </div>
 
         <div class="flex space-x-10">
