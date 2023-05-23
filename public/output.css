@@ -1099,6 +1099,11 @@ video {
   border-color: rgb(250 89 89 / var(--tw-border-opacity));
 }
 
+.hover\:border-blackish:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(36 42 69 / var(--tw-border-opacity));
+}
+
 .hover\:text-blueish:hover {
   --tw-text-opacity: 1;
   color: rgb(82 103 223 / var(--tw-text-opacity));
