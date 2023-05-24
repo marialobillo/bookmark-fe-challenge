@@ -44,13 +44,13 @@ faqs.forEach((faq, index) => {
     arrows.forEach((arrow) => { 
       arrow.classList.remove("rotate-180");
       arrow.classList.add("rotate-0");
-      arrow.classList.remove("text-red-500");
+      arrow.classList.remove("text-redish");
     });
     faq.classList.toggle("active");
     answers[index].classList.remove("max-h-0");
     answers[index].classList.add("max-h-300");
     arrows[index].classList.toggle("rotate-180");
-    arrows[index].classList.toggle("text-red-500");
+    arrows[index].classList.toggle("text-redish");
   });
 });
 
