@@ -12,6 +12,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./output.css" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <script>
+        tailwind.config = {
+          content: ["./src/**/*.{html,js}"],
+          theme: {
+            extend: {},
+            colors: {
+              redish: "#FA5959",
+              blueish: "#5267DF",
+              "dark-gray": "#828282",
+              "medium-gray": "#9194A2",
+              "light-gray": "#F7F7F7",
+              blackish: "#242A45",
+            },
+          },
+          plugins: [],
+      };
+            
+    </script>
   </head>
   <body class="overflow-x-hidden font-Rubik">
     <nav class="container relative mx-auto p-4">
@@ -31,7 +49,7 @@
           <a href="#contact" class="hover:text-redish">Contact</a>
           <a
             href="#login"
-            class="px-10 py-3 bg-redish text-white rounded-lg border-2 border-redish shadow-md hover:bg-white hover:text-redish hover:border-2 hover:border-redish"
+            class="px-10 py-3 bg-redish text-white font-bold rounded-lg border-2 border-redish shadow-md hover:bg-white hover:text-redish hover:border-2 hover:border-redish"
             >Login</a
           >
         </div>
@@ -49,16 +67,24 @@
         id="mobile-menu"
         class="fixed inset-0 flex-col items-center w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 text-white uppercase opacity-90 divide-y divide-light-gray bg-cyan-950 hidden z-30 divided-y divide-gray-500"
       >
-        <div class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white">
+        <div
+          class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white"
+        >
           <a href="#features" class="block">Features</a>
         </div>
-        <div class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white">
+        <div
+          class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white"
+        >
           <a href="#pricing" class="block">Pricing</a>
         </div>
-        <div class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white">
+        <div
+          class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white"
+        >
           <a href="#contact" class="block">Contact</a>
         </div>
-        <div class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white">
+        <div
+          class="w-full py-3 text-center hover:border-2 hover:rounded hover:border-white"
+        >
           <a href="#login" class="block">Login</a>
         </div>
 
@@ -115,7 +141,7 @@
             >
             <a
               href=""
-              class="p-2 py-4 text-center md:text-md font-semibold text-dark-gray border-2 bg-light-gray rounded shadow-lg hover:text-medium-gray hover:border hover:border-blackish hover:bg-white"
+              class="p-2 py-4 text-center md:text-md font-semibold text-blackish border-2 bg-white rounded shadow-lg hover:text-medium-gray hover:border hover:border-blackish hover:bg-white"
               >Get it on Firefox</a
             >
           </div>
@@ -153,7 +179,6 @@
     <section id="tabs">
       <!-- Tabs -->
       <div class="container relative mx-auto my-8 mt-12 mb-20 px-8">
-  
         <!-- tab titles -->
         <div
           class="flex flex-col justify-around max-w-3xl mx-auto border-b space-x-10 md:flex-row cursor-pointer"
@@ -196,10 +221,15 @@
             <!-- image-->
             <div class="flex justify-center mx-6 my-10">
               <div class="relative">
-                <div class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"></div>
-                <img src="../images/illustration-features-tab-1.svg" alt="Your Image" class="relative z-10">
+                <div
+                  class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"
+                ></div>
+                <img
+                  src="../images/illustration-features-tab-1.svg"
+                  alt="Your Image"
+                  class="relative z-10"
+                />
               </div>
-              
             </div>
             <!-- content-->
             <div class="flex flex-col space-y-8 justify-center md:w-1/2">
@@ -434,7 +464,6 @@
           >
             <path
               fill="none"
-              aria-label="arrow down"
               stroke="currentColor"
               stroke-width="3"
               d="M1 1l8 8 8-8"
@@ -475,7 +504,6 @@
             <path
               fill="none"
               stroke="currentColor"
-              aria-label="arrow down"
               stroke-width="3"
               d="M1 1l8 8 8-8"
             />
@@ -513,7 +541,6 @@
             <path
               fill="none"
               stroke="currentColor"
-              aria-label="arrow down"
               stroke-width="3"
               d="M1 1l8 8 8-8"
             />
@@ -553,7 +580,6 @@
             <path
               fill="none"
               stroke="currentColor"
-              aria-label="arrow down"
               stroke-width="3"
               d="M1 1l8 8 8-8"
             />
