@@ -61,8 +61,10 @@ btn.addEventListener("click", () => {
   menu.classList.toggle("flex");
 
   if (menu.classList.contains("flex")) {
+    // mobile menu is open
     logo.setAttribute("src", "../images/logo-bookmark-footer.svg");
   } else {
+    // mobile menu is closed
     logo.setAttribute("src", "../images/logo-bookmark.svg");
   }
 });
