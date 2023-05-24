@@ -14,7 +14,7 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <script>
         tailwind.config = {
-          content: ["./src/**/*.{html,js}"],
+          content: ["./*.{html,js,css}"],
           theme: {
             extend: {},
             colors: {
@@ -24,6 +24,7 @@
               "medium-gray": "#9194A2",
               "light-gray": "#F7F7F7",
               blackish: "#242A45",
+              white: "#FFFFFF",
             },
           },
           plugins: [],
@@ -649,12 +650,12 @@
     </section>
 
     <!-- footer -->
-    <footer class="py-6 bg-cyan-950">
+    <footer class="py-6 bg-blackish">
       <div
         class="container flex flex-col items-center justify-between mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
       >
         <div
-          class="flex flex-col items-center justify-between space-y-8 font-light md:flex-row md:space-y-0 md:space-x-14 text-gray-500"
+          class="flex flex-col items-center justify-between space-y-8 font-light md:flex-row md:space-y-0 md:space-x-14 text-white"
         >
           <img
             src="../images/logo-bookmark-footer.svg"
@@ -687,6 +688,6 @@
       </div>
     </footer>
 
-    <script src="../src/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
