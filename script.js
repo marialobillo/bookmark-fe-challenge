@@ -16,7 +16,7 @@ tabsArray.forEach((tab) => {
     target = tab;
     tabsArray.forEach((tab) => {
       tab.classList.remove("border-b-4");
-      tab.classList.remove("border-red-500");
+      tab.classList.remove("border-redish");
     });
 
     const currentTab = tabsArray.indexOf(target);
@@ -29,7 +29,7 @@ tabsArray.forEach((tab) => {
     });
 
     target.classList.add("border-b-4");
-    target.classList.add("border-red-500");
+    target.classList.add("border-redish");
   });
 });
 
