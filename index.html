@@ -13,23 +13,22 @@
     <link rel="stylesheet" href="./output.css" />
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <script>
-        tailwind.config = {
-          content: ["./*.{html,js,css}"],
-          theme: {
-            extend: {},
-            colors: {
-              redish: "#FA5959",
-              blueish: "#5267DF",
-              "dark-gray": "#828282",
-              "medium-gray": "#9194A2",
-              "light-gray": "#F7F7F7",
-              blackish: "#242A45",
-              white: "#FFFFFF",
-            },
+      tailwind.config = {
+        content: ["./*.{html,js,css}"],
+        theme: {
+          extend: {},
+          colors: {
+            redish: "#FA5959",
+            blueish: "#5267DF",
+            "dark-gray": "#828282",
+            "medium-gray": "#9194A2",
+            "light-gray": "#F7F7F7",
+            blackish: "#242A45",
+            white: "#FFFFFF",
           },
-          plugins: [],
+        },
+        plugins: [],
       };
-            
     </script>
   </head>
   <body class="overflow-x-hidden font-Rubik">
@@ -118,12 +117,12 @@
         class="container flex flex-col-reverse md:flex-row p-6 mx-auto lg:flex-row md:my-32 mt-4 pl-12"
       >
         <!-- Hero Content -->
-        <div class="flex flex-col space-y-6 my-20">
-          <h2
+        <div class="flex flex-col space-y-6 my-20 md:w-1/2">
+          <h1
             class="text-3xl font-semibold text-center lg:text-6xl lg:text-left"
           >
             A Simple Bookmark Manager
-          </h2>
+          </h1>
           <p
             class="max-w-lg mx-auto text-lg text-center text-blackish opacity-50 lg:text-xl lg:text-left lg:mt-0 lg:mx-0"
           >
