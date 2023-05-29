@@ -4,11 +4,27 @@ const contentArray = Array.from(document.querySelectorAll(".content"));
 const faqs = document.querySelectorAll(".faq");
 const answers = document.querySelectorAll(".answer");
 const arrows = document.querySelectorAll(".arrow");
-console.log(arrows)
 
 const btn = document.getElementById("hamburger-btn");
 const menu = document.getElementById("mobile-menu");
 const logo = document.getElementById("logo-img");
+
+const btn_contact = document.getElementById("contact-button");
+const input_email = document.getElementById("email");
+
+// Contact form
+btn_contact.addEventListener("click", (event) => {
+  event.preventDefault();
+  if(!input_email.value || !isValidEmail(input_email.value)){
+    input_email.classList.add("border-redish");
+  } else {
+    input_email.classList.remove("border-redish");
+  }
+})
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
 
 // tabs on features section
 tabsArray.forEach((tab) => {
@@ -70,3 +86,4 @@ btn.addEventListener("click", () => {
     logo.setAttribute("src", "./images/logo-bookmark.svg");
   }
 });
+
