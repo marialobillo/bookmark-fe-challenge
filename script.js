@@ -11,14 +11,17 @@ const logo = document.getElementById("logo-img");
 
 const btn_contact = document.getElementById("contact-button");
 const input_email = document.getElementById("email");
+const check_icon = document.getElementById("check-icon");
 
 // Contact form
 btn_contact.addEventListener("click", (event) => {
   event.preventDefault();
   if(!input_email.value || !isValidEmail(input_email.value)){
     input_email.classList.add("border-redish");
+    check_icon.classList.remove("hidden");
   } else {
     input_email.classList.remove("border-redish");
+    check_icon.classList.add("hidden");
   }
 })
 
