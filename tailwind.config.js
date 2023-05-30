@@ -12,6 +12,9 @@ module.exports = {
       blackish: "#242A45",
       white: "#FFFFFF",
     },
+    variants: {
+      fill: ['hover', 'focus'], 
+    },
   },
   plugins: [],
 };
