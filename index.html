@@ -125,253 +125,254 @@
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <div
-                class="container flex flex-col-reverse md:flex-row p-4 mx-auto lg:flex-row md:my-20 mt-2 pl-10"
-            >
-                <!-- Hero Content -->
-                <div class="flex flex-col space-y-6 my-20 md:w-1/2">
-                    <h1
-                        class="text-3xl font-semibold text-center lg:text-5xl lg:text-left"
-                    >
-                        A Simple Bookmark Manager
-                    </h1>
-                    <p
-                        class="max-w-lg mx-auto text-lg text-center text-blackish opacity-50 lg:text-xl lg:text-left lg:mt-0 lg:mx-0"
-                    >
-                        A clean and simple interface to organize your favourite
-                        websites. Open a new browser tab and see your sites load
-                        instantly. Try it for free.
-                    </p>
-                    <!-- hero buttons -->
-                    <div
-                        class="flex items-center justify-center w-full space-x-4 lg:justify-start"
-                    >
-                        <a
-                            href=""
-                            class="p-2 py-4 md:px-8 text-center md:text-md font-semibold text-white bg-blueish rounded shadow-xl border-2 border-blueish hover:text-blueish hover:bg-white"
-                            >Get it on Chrome</a
+        <main>
+            <!-- Hero Section -->
+            <section id="hero">
+                <div
+                    class="container flex flex-col-reverse md:flex-row p-4 mx-auto lg:flex-row md:my-20 mt-2 pl-10"
+                >
+                    <!-- Hero Content -->
+                    <div class="flex flex-col space-y-6 my-20 md:w-1/2">
+                        <h1
+                            class="text-3xl font-semibold text-center lg:text-5xl lg:text-left"
                         >
-                        <a
-                            href=""
-                            class="p-2 py-4 md:px-8 text-center md:text-md font-semibold text-blackish border-2 border-light-gray bg-light-gray rounded shadow-xl hover:text-blackish hover:border-2 hover:border-blackish hover:bg-white"
-                            >Get it on Firefox</a
+                            A Simple Bookmark Manager
+                        </h1>
+                        <p
+                            class="max-w-lg mx-auto text-lg text-center text-blackish opacity-50 lg:text-xl lg:text-left lg:mt-0 lg:mx-0"
                         >
+                            A clean and simple interface to organize your
+                            favourite websites. Open a new browser tab and see
+                            your sites load instantly. Try it for free.
+                        </p>
+                        <!-- hero buttons -->
+                        <div
+                            class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+                        >
+                            <a
+                                href=""
+                                class="p-2 py-4 md:px-8 text-center md:text-md font-semibold text-white bg-blueish rounded shadow-xl border-2 border-blueish hover:text-blueish hover:bg-white"
+                                >Get it on Chrome</a
+                            >
+                            <a
+                                href=""
+                                class="p-2 py-4 md:px-8 text-center md:text-md font-semibold text-blackish border-2 border-light-gray bg-light-gray rounded shadow-xl hover:text-blackish hover:border-2 hover:border-blackish hover:bg-white"
+                                >Get it on Firefox</a
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Hero Image -->
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-blueish rounded-l-full"
+                        ></div>
+                        <img
+                            src="./images/illustration-hero.svg"
+                            alt="A simple bookmark Manager"
+                            class="relative z-10"
+                        />
                     </div>
                 </div>
+            </section>
 
-                <!-- Hero Image -->
-                <div class="relative">
-                    <div
-                        class="absolute inset-0 bg-blueish rounded-l-full"
-                    ></div>
-                    <img
-                        src="./images/illustration-hero.svg"
-                        alt="A simple bookmark Manager"
-                        class="relative z-10"
-                    />
+            <!-- Features section -->
+            <section id="features">
+                <div class="container mt-6 mx-auto px-6">
+                    <h2 class="text-4xl font-semibold text-center">Features</h2>
+                    <p
+                        class="mt-4 max-w-xl mx-auto text-center text-lg text-blackish opacity-50"
+                    >
+                        Our aim is to make it quick and easy for you to access
+                        your favourite websites. Your bookmarks sync between
+                        your devices so you can access them on the go.
+                    </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Features section -->
-        <section id="features">
-            <div class="container mt-6 mx-auto px-6">
-                <h2 class="text-4xl font-semibold text-center">Features</h2>
-                <p
-                    class="mt-4 max-w-xl mx-auto text-center text-lg text-blackish opacity-50"
-                >
-                    Our aim is to make it quick and easy for you to access your
-                    favourite websites. Your bookmarks sync between your devices
-                    so you can access them on the go.
-                </p>
-            </div>
-        </section>
-
-        <!-- Features Cards -->
-        <section id="tabs">
-            <!-- Tabs -->
-            <div class="container relative mx-auto my-6 mb-20 px-8">
-                <!-- tab titles -->
-                <div
-                    class="flex flex-col justify-around max-w-3xl mx-auto border-b border-medium-gray space-x-10 md:flex-row cursor-pointer"
-                >
+            <!-- Features Cards -->
+            <section id="tabs">
+                <!-- Tabs -->
+                <div class="container relative mx-auto my-6 mb-20 px-8">
+                    <!-- tab titles -->
                     <div
-                        class="text-center text-blackish border-b md:border-b-0 md:w-1/3 hover:text-redish"
-                        data-target="panel-1"
+                        class="flex flex-col justify-around max-w-3xl mx-auto border-b border-medium-gray space-x-10 md:flex-row cursor-pointer"
                     >
                         <div
-                            class="py-5 px-10 border-b-4 border-redish tab"
+                            class="text-center text-blackish border-b md:border-b-0 md:w-1/3 hover:text-redish"
                             data-target="panel-1"
                         >
-                            Simple Bookmarking
+                            <div
+                                class="py-5 px-10 border-b-4 border-redish tab"
+                                data-target="panel-1"
+                            >
+                                Simple Bookmarking
+                            </div>
                         </div>
-                    </div>
 
-                    <div
-                        class="flex justify-center text-center text-blackish border-b border-medium-gray md:border-b-0 md:w-1/3 hover:text-redish"
-                        data-target="panel-2"
-                    >
                         <div
-                            class="py-5 px-10 tab w-full"
+                            class="flex justify-center text-center text-blackish border-b border-medium-gray md:border-b-0 md:w-1/3 hover:text-redish"
                             data-target="panel-2"
                         >
-                            Speedy Searching
+                            <div
+                                class="py-5 px-10 tab w-full"
+                                data-target="panel-2"
+                            >
+                                Speedy Searching
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex justify-center text-center text-blackish border-b border-medium-gray md:border-b-0 md:w-1/3 hover:text-redish"
+                            data-target="panel-2"
+                        >
+                            <div
+                                class="py-5 px-10 tab w-full"
+                                data-target="panel-3"
+                            >
+                                Easy Sharing
+                            </div>
                         </div>
                     </div>
 
-                    <div
-                        class="flex justify-center text-center text-blackish border-b border-medium-gray md:border-b-0 md:w-1/3 hover:text-redish"
-                        data-target="panel-2"
-                    >
+                    <!-- tab content -->
+                    <div id="tab-contents" class="container mx-auto">
+                        <!-- content 1 -->
                         <div
-                            class="py-5 px-10 tab w-full"
-                            data-target="panel-3"
+                            class="flex flex-col md:flex-row justify-center items-center mx-auto my-6 content panel panel-1 space-x-14"
                         >
-                            Easy Sharing
+                            <!-- image-->
+                            <div class="flex justify-center mx-6 my-10">
+                                <div class="relative">
+                                    <div
+                                        class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"
+                                    ></div>
+                                    <img
+                                        src="./images/illustration-features-tab-1.svg"
+                                        alt="Your Image"
+                                        class="relative z-10"
+                                    />
+                                </div>
+                            </div>
+                            <!-- content-->
+                            <div
+                                class="flex flex-col space-y-8 justify-center md:w-1/2"
+                            >
+                                <h2
+                                    class="mt-4 text-3xl font-bold text-center md:mt-0 md:text-left"
+                                >
+                                    Bookmark in one click
+                                </h2>
+                                <p
+                                    class="max-w-md text-xl text-center text-blackish opacity-50 md:text-left"
+                                >
+                                    Organize your bookmarks however you like.
+                                    Our simple drag-and-drop interface gives you
+                                    complete control over how you manage your
+                                    favourite sites.
+                                </p>
+                                <div class="mx-auto md:mx-0">
+                                    <a
+                                        href=""
+                                        class="px-8 py-4 bg-blueish rounded-lg text-white font-semibold border-2 border-blueish md:inline-flex hover:bg-white hover:text-blueish hover:border-2"
+                                    >
+                                        More Info
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- content 2 -->
+                        <div
+                            class="flex flex-col md:flex-row justify-center items-center mx-auto my-10 content panel panel-2 space-x-14 hidden"
+                        >
+                            <!-- image-->
+                            <div class="flex justify-center md:w-1/2 my-10">
+                                <div class="relative">
+                                    <div
+                                        class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"
+                                    ></div>
+                                    <img
+                                        src="./images/illustration-features-tab-2.svg"
+                                        alt="Intelligient search"
+                                        class="relative z-10"
+                                    />
+                                </div>
+                            </div>
+                            <!-- content-->
+                            <div
+                                class="flex flex-col space-y-8 justify-center md:w-1/2"
+                            >
+                                <h2
+                                    class="mt-4 text-3xl font-bold text-center md:mt-0 md:text-left"
+                                >
+                                    Intelligient search
+                                </h2>
+                                <p
+                                    class="max-w-md text-xl text-center text-blackish opacity-50 md:text-left"
+                                >
+                                    Our powerful search feature will help you
+                                    find saved sites in no time at all. No need
+                                    to trawl through all of your bookmarks.
+                                </p>
+                                <div class="mx-auto md:mx-0">
+                                    <a
+                                        href=""
+                                        class="px-8 py-4 bg-blueish rounded-lg text-white font-semibold border-2 border-blueish md:inline-flex hover:bg-white hover:text-blueish hover:border-2"
+                                    >
+                                        More Info
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- content 3 -->
+                        <div
+                            class="flex flex-col md:flex-row justify-center items-center mx-auto my-10 content panel panel-3 space-x-14 hidden"
+                        >
+                            <!-- image-->
+                            <div class="flex justify-center md:w-1/2 my-10">
+                                <div class="relative">
+                                    <div
+                                        class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"
+                                    ></div>
+                                    <img
+                                        src="./images/illustration-features-tab-3.svg"
+                                        alt="Share your bookmarks"
+                                        class="relative z-10"
+                                    />
+                                </div>
+                            </div>
+                            <!-- content-->
+                            <div
+                                class="flex flex-col space-y-8 justify-center md:w-1/2"
+                            >
+                                <h2
+                                    class="mt-4 text-3xl font-bold text-center md:mt-0 md:text-left"
+                                >
+                                    Share your bookmarks
+                                </h2>
+                                <p
+                                    class="max-w-md text-xl text-center text-blackish opacity-50 md:text-left"
+                                >
+                                    Easily share your bookmarks and collections
+                                    with others. Create a shareable link that
+                                    you can send at the click of a button.
+                                </p>
+                                <div class="mx-auto md:mx-0">
+                                    <a
+                                        href=""
+                                        class="px-8 py-4 bg-blueish rounded-lg text-white font-semibold border-2 border-blueish md:inline-flex hover:bg-white hover:text-blueish hover:border-2"
+                                    >
+                                        More Info
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- tab content -->
-                <div id="tab-contents" class="container mx-auto">
-                    <!-- content 1 -->
-                    <div
-                        class="flex flex-col md:flex-row justify-center items-center mx-auto my-6 content panel panel-1 space-x-14"
-                    >
-                        <!-- image-->
-                        <div class="flex justify-center mx-6 my-10">
-                            <div class="relative">
-                                <div
-                                    class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"
-                                ></div>
-                                <img
-                                    src="./images/illustration-features-tab-1.svg"
-                                    alt="Your Image"
-                                    class="relative z-10"
-                                />
-                            </div>
-                        </div>
-                        <!-- content-->
-                        <div
-                            class="flex flex-col space-y-8 justify-center md:w-1/2"
-                        >
-                            <h2
-                                class="mt-4 text-3xl font-bold text-center md:mt-0 md:text-left"
-                            >
-                                Bookmark in one click
-                            </h2>
-                            <p
-                                class="max-w-md text-xl text-center text-blackish opacity-50 md:text-left"
-                            >
-                                Organize your bookmarks however you like. Our
-                                simple drag-and-drop interface gives you
-                                complete control over how you manage your
-                                favourite sites.
-                            </p>
-                            <div class="mx-auto md:mx-0">
-                                <a
-                                    href=""
-                                    class="px-8 py-4 bg-blueish rounded-lg text-white font-semibold border-2 border-blueish md:inline-flex hover:bg-white hover:text-blueish hover:border-2"
-                                >
-                                    More Info
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- content 2 -->
-                    <div
-                        class="flex flex-col md:flex-row justify-center items-center mx-auto my-10 content panel panel-2 space-x-14 hidden"
-                    >
-                        <!-- image-->
-                        <div class="flex justify-center md:w-1/2 my-10">
-                            <div class="relative">
-                                <div
-                                    class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"
-                                ></div>
-                                <img
-                                    src="./images/illustration-features-tab-2.svg"
-                                    alt="Intelligient search"
-                                    class="relative z-10"
-                                />
-                            </div>
-                        </div>
-                        <!-- content-->
-                        <div
-                            class="flex flex-col space-y-8 justify-center md:w-1/2"
-                        >
-                            <h2
-                                class="mt-4 text-3xl font-bold text-center md:mt-0 md:text-left"
-                            >
-                                Intelligient search
-                            </h2>
-                            <p
-                                class="max-w-md text-xl text-center text-blackish opacity-50 md:text-left"
-                            >
-                                Our powerful search feature will help you find
-                                saved sites in no time at all. No need to trawl
-                                through all of your bookmarks.
-                            </p>
-                            <div class="mx-auto md:mx-0">
-                                <a
-                                    href=""
-                                    class="px-8 py-4 bg-blueish rounded-lg text-white font-semibold border-2 border-blueish md:inline-flex hover:bg-white hover:text-blueish hover:border-2"
-                                >
-                                    More Info
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- content 3 -->
-                    <div
-                        class="flex flex-col md:flex-row justify-center items-center mx-auto my-10 content panel panel-3 space-x-14 hidden"
-                    >
-                        <!-- image-->
-                        <div class="flex justify-center md:w-1/2 my-10">
-                            <div class="relative">
-                                <div
-                                    class="absolute inset-0 -left-10 -bottom-24 bg-blueish rounded-r-full min-h-[210px] w-full h-auto -z-10"
-                                ></div>
-                                <img
-                                    src="./images/illustration-features-tab-3.svg"
-                                    alt="Share your bookmarks"
-                                    class="relative z-10"
-                                />
-                            </div>
-                        </div>
-                        <!-- content-->
-                        <div
-                            class="flex flex-col space-y-8 justify-center md:w-1/2"
-                        >
-                            <h2
-                                class="mt-4 text-3xl font-bold text-center md:mt-0 md:text-left"
-                            >
-                                Share your bookmarks
-                            </h2>
-                            <p
-                                class="max-w-md text-xl text-center text-blackish opacity-50 md:text-left"
-                            >
-                                Easily share your bookmarks and collections with
-                                others. Create a shareable link that you can
-                                send at the click of a button.
-                            </p>
-                            <div class="mx-auto md:mx-0">
-                                <a
-                                    href=""
-                                    class="px-8 py-4 bg-blueish rounded-lg text-white font-semibold border-2 border-blueish md:inline-flex hover:bg-white hover:text-blueish hover:border-2"
-                                >
-                                    More Info
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            </section>
+        </main>
         <!-- Download -->
         <section id="pricing">
             <div class="flex flex-col items-center justify-center my-6">
