@@ -66,10 +66,16 @@ faqs.forEach((faq, index) => {
             arrow.classList.remove("text-redish");
         });
         faq.classList.toggle("active");
-        answers[index].classList.remove("max-h-0");
-        answers[index].classList.add("max-h-300");
+        if(!answers[index].classList.contains("max-h-300")) {
+          answers[index].classList.add("max-h-300");
+          answers[index].classList.remove("max-h-0");
+        } else {
+          answers[index].classList.remove("max-h-300");
+          answers[index].classList.add("max-h-0");
+        }
         arrows[index].classList.toggle("rotate-180");
-        arrows[index].classList.toggle("text-redish");
+        arrows[index].classList.add("text-redish");
+        
     });
 });
 
